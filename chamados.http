@@ -1,0 +1,32 @@
+GET http://localhost:8000/clientes
+
+###
+
+GET http://localhost:8000/clientes/1
+
+###
+
+
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+    "nome" : "Jorge",
+    "email" : "jorge@xpto.com",
+    "telefone" : "47991222324"
+}
+
+###
+
+PUT http://localhost:8000/clientes/1
+Content-Type: application/json
+
+{
+    "nome" : "Jorge Aragão",
+    "email" : "jorge@xpto.com",
+    "telefone" : "47991222324"
+}
+
+###
+
+DELETE http://localhost:8000/clientes/1
